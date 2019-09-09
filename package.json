@@ -2,10 +2,18 @@
   "name": "match-flip",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "8.10.0",
+    "npm": "6.11.2"
+  },
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "ramda": "^0.26.1",
+    "rc-switch": "^1.9.0",
+    "react": "^16.7.0-alpha.0",
+    "react-card-flip": "^0.8.1",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-scripts": "3.1.1",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

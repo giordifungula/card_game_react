@@ -1,33 +1,93 @@
-.App {
+body {
+  margin: 0;
+}
+.react-card-front {
+}
+.grid-container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px 150px 10px 150px;
+  background: #ccc3c3;
+}
+
+.grid-header-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #0c0c0c;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.justify-left {
+  text-align: left
+}
+
+.justify-end {
+  text-align: right;
+}
+
+.justify-center {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.timer {
+  color: #5168e9;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.restart-button {
+  width: 15em;
+  height: 3em;
   color: white;
+  background-color: #1a1a1f;
+  border: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.game-status-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(24, 21, 16);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 350px;
+  height: 9em;
+  background-color: rgb(105, 59, 230);
+  color: white;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.card :hover {
+}
+
+.hide-card {
+  visibility: hidden;
+}
+
+.card-front {
+  background-color: #1485d1;
+  box-shadow: 5px 5px 5px rgba(16, 32, 175, 0.6);
+}
+
+.card-back {
+  font-weight: bold;
+}
+
+.react-card-front {
+  /* position: unset !important; */
+  /* This stops the shifting over into the next row */
+}
+
+.heading {
+  font-size: 2em;
+  color: #1485d1;
+  text-align: center;
+  border: 1px solid rgb(5, 5, 5);
+  margin: 10px;
+  background: #0c0c0c;
 }
